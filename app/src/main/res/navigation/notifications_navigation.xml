@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifications_navigation"
+    app:startDestination="@+id/notifications">
+    <fragment
+        android:id="@+id/notifications"
+        android:name="io.burnoutcrew.multinavhost.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_list">
+        <deepLink app:uri="sample://notifications/first/" />
+    </fragment>
+    <navigation
+        android:id="@+id/navigation_notificationsSecondLevel"
+        app:startDestination="@id/notificationsSecondLevel">
+        <fragment
+            android:id="@+id/notificationsSecondLevel"
+            android:name="io.burnoutcrew.multinavhost.ui.notifications.NotificationsSecondLevelFragment"
+            android:label="@string/title_notifications_second_level"
+            tools:layout="@layout/fragment_list">
+            <deepLink app:uri="sample://notifications/second/" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/notificationsThirdLevel"
+            android:name="io.burnoutcrew.multinavhost.ui.notifications.NotificationsThirdLevelFragment"
+            android:label="@string/title_notifications_third_level"
+            tools:layout="@layout/fragment_list">
+            <deepLink app:uri="sample://notifications/third/" />
+        </fragment>
+    </navigation>
+</navigation>

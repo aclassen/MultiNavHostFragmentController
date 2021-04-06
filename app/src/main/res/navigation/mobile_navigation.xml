@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation">
+
+    <fragment
+        android:id="@+id/navigation"
+        android:name="io.burnoutcrew.multinavhost.ui.main.BottomNavigationFragment">
+        <deepLink app:uri="sample://dashboard/{id}/" />
+        <deepLink app:uri="sample://notifications/{id}/" />
+        <deepLink app:uri="sample://home/details/" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="io.burnoutcrew.multinavhost.ui.detail.DetailsFragment">
+        <deepLink app:uri="sample://details/" />
+    </fragment>
+
+</navigation>

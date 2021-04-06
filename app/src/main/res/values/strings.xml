@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MultiNavHostFragmentController</string>
+    <string name="title_home">Home</string>
+    <string name="title_home_second_level">Home lvl 2</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_dashboard_second_level">Dashboard lvl 2</string>
+    <string name="title_dashboard_third_level">Dashboard lvl 3</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications_second_level">Notifications lvl 2</string>
+    <string name="title_notifications_third_level">Notifications lvl 3</string>
+    <string name="home_details_item_title">Navigate to notifications second level</string>
+    <string name="item_title">%1$s / item(%2$d)</string>
+</resources>
